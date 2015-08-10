@@ -37,8 +37,10 @@
 	    #define IMATH_EXPORT __declspec(dllexport)
         #define IMATH_EXPORT_CONST extern __declspec(dllexport)
     #else
-	    #define IMATH_EXPORT __declspec(dllimport)
-	    #define IMATH_EXPORT_CONST extern __declspec(dllimport)
+		#define IMATH_EXPORT
+		#define IMATH_EXPORT_CONST extern const
+		//#define IMATH_EXPORT __declspec(dllimport)
+	    //#define IMATH_EXPORT_CONST extern __declspec(dllimport)
     #endif
 #else
     #define IMATH_EXPORT

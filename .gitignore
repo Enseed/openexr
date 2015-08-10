@@ -21,3 +21,8 @@ missing
 .DS_Store
 *.project
 *.cproject
+**/Debug/
+*.user
+**/Release/
+**/Debug Static/
+**/Release Static/

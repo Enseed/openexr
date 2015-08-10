@@ -39,7 +39,9 @@
     #if defined(IEX_EXPORTS)
     #define IEX_EXPORT __declspec(dllexport)
     #else
-    #define IEX_EXPORT __declspec(dllimport)
+	#define IEX_EXPORT
+	#define IEX_EXPORT_CONST const
+	//#define IEX_EXPORT __declspec(dllimport)
     #endif
     #define IEX_EXPORT_CONST
 #else

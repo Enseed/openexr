@@ -1,0 +1,392 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Debug Static|Win32">
+      <Configuration>Debug Static</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Debug Static|x64">
+      <Configuration>Debug Static</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Debug|Win32">
+      <Configuration>Debug</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Debug|x64">
+      <Configuration>Debug</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release Static|Win32">
+      <Configuration>Release Static</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release Static|x64">
+      <Configuration>Release Static</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|Win32">
+      <Configuration>Release</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|x64">
+      <Configuration>Release</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="..\..\config.windows\IlmBaseConfig.h" />
+    <ClInclude Include="..\..\Half\half.h" />
+    <ClInclude Include="..\..\Half\halfExport.h" />
+    <ClInclude Include="..\..\Half\halfFunction.h" />
+    <ClInclude Include="..\..\Half\halfLimits.h" />
+    <ClInclude Include="..\..\IexMath\IexMathFloatExc.h" />
+    <ClInclude Include="..\..\IexMath\IexMathFpu.h" />
+    <ClInclude Include="..\..\IexMath\IexMathIeeeExc.h" />
+    <ClInclude Include="..\..\Iex\Iex.h" />
+    <ClInclude Include="..\..\Iex\IexBaseExc.h" />
+    <ClInclude Include="..\..\Iex\IexErrnoExc.h" />
+    <ClInclude Include="..\..\Iex\IexExport.h" />
+    <ClInclude Include="..\..\Iex\IexForward.h" />
+    <ClInclude Include="..\..\Iex\IexMacros.h" />
+    <ClInclude Include="..\..\Iex\IexMathExc.h" />
+    <ClInclude Include="..\..\Iex\IexNamespace.h" />
+    <ClInclude Include="..\..\Iex\IexThrowErrnoExc.h" />
+    <ClInclude Include="..\..\IlmThread\IlmThread.h" />
+    <ClInclude Include="..\..\IlmThread\IlmThreadExport.h" />
+    <ClInclude Include="..\..\IlmThread\IlmThreadForward.h" />
+    <ClInclude Include="..\..\IlmThread\IlmThreadMutex.h" />
+    <ClInclude Include="..\..\IlmThread\IlmThreadNamespace.h" />
+    <ClInclude Include="..\..\IlmThread\IlmThreadPool.h" />
+    <ClInclude Include="..\..\IlmThread\IlmThreadSemaphore.h" />
+    <ClInclude Include="..\..\Imath\ImathBox.h" />
+    <ClInclude Include="..\..\Imath\ImathBoxAlgo.h" />
+    <ClInclude Include="..\..\Imath\ImathColor.h" />
+    <ClInclude Include="..\..\Imath\ImathColorAlgo.h" />
+    <ClInclude Include="..\..\Imath\ImathEuler.h" />
+    <ClInclude Include="..\..\Imath\ImathExc.h" />
+    <ClInclude Include="..\..\Imath\ImathExport.h" />
+    <ClInclude Include="..\..\Imath\ImathForward.h" />
+    <ClInclude Include="..\..\Imath\ImathFrame.h" />
+    <ClInclude Include="..\..\Imath\ImathFrustum.h" />
+    <ClInclude Include="..\..\Imath\ImathFrustumTest.h" />
+    <ClInclude Include="..\..\Imath\ImathFun.h" />
+    <ClInclude Include="..\..\Imath\ImathGL.h" />
+    <ClInclude Include="..\..\Imath\ImathGLU.h" />
+    <ClInclude Include="..\..\Imath\ImathHalfLimits.h" />
+    <ClInclude Include="..\..\Imath\ImathInt64.h" />
+    <ClInclude Include="..\..\Imath\ImathInterval.h" />
+    <ClInclude Include="..\..\Imath\ImathLimits.h" />
+    <ClInclude Include="..\..\Imath\ImathLine.h" />
+    <ClInclude Include="..\..\Imath\ImathLineAlgo.h" />
+    <ClInclude Include="..\..\Imath\ImathMath.h" />
+    <ClInclude Include="..\..\Imath\ImathMatrix.h" />
+    <ClInclude Include="..\..\Imath\ImathMatrixAlgo.h" />
+    <ClInclude Include="..\..\Imath\ImathNamespace.h" />
+    <ClInclude Include="..\..\Imath\ImathPlane.h" />
+    <ClInclude Include="..\..\Imath\ImathPlatform.h" />
+    <ClInclude Include="..\..\Imath\ImathQuat.h" />
+    <ClInclude Include="..\..\Imath\ImathRandom.h" />
+    <ClInclude Include="..\..\Imath\ImathRoots.h" />
+    <ClInclude Include="..\..\Imath\ImathShear.h" />
+    <ClInclude Include="..\..\Imath\ImathSphere.h" />
+    <ClInclude Include="..\..\Imath\ImathVec.h" />
+    <ClInclude Include="..\..\Imath\ImathVecAlgo.h" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="..\..\Half\eLut.cpp">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug Static|Win32'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Release Static|Win32'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug Static|x64'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Release|x64'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Release Static|x64'">true</ExcludedFromBuild>
+    </ClCompile>
+    <ClCompile Include="..\..\Half\half.cpp" />
+    <ClCompile Include="..\..\Half\toFloat.cpp" />
+    <ClCompile Include="..\..\IexMath\IexMathFloatExc.cpp" />
+    <ClCompile Include="..\..\IexMath\IexMathFpu.cpp" />
+    <ClCompile Include="..\..\Iex\IexBaseExc.cpp" />
+    <ClCompile Include="..\..\Iex\IexThrowErrnoExc.cpp" />
+    <ClCompile Include="..\..\IlmThread\IlmThread.cpp" />
+    <ClCompile Include="..\..\IlmThread\IlmThreadMutex.cpp" />
+    <ClCompile Include="..\..\IlmThread\IlmThreadMutexPosix.cpp" />
+    <ClCompile Include="..\..\IlmThread\IlmThreadMutexWin32.cpp" />
+    <ClCompile Include="..\..\IlmThread\IlmThreadPool.cpp" />
+    <ClCompile Include="..\..\IlmThread\IlmThreadPosix.cpp" />
+    <ClCompile Include="..\..\IlmThread\IlmThreadSemaphore.cpp" />
+    <ClCompile Include="..\..\IlmThread\IlmThreadSemaphorePosix.cpp" />
+    <ClCompile Include="..\..\IlmThread\IlmThreadSemaphorePosixCompat.cpp" />
+    <ClCompile Include="..\..\IlmThread\IlmThreadSemaphoreWin32.cpp" />
+    <ClCompile Include="..\..\IlmThread\IlmThreadWin32.cpp" />
+    <ClCompile Include="..\..\Imath\ImathBox.cpp" />
+    <ClCompile Include="..\..\Imath\ImathColorAlgo.cpp" />
+    <ClCompile Include="..\..\Imath\ImathFun.cpp" />
+    <ClCompile Include="..\..\Imath\ImathMatrixAlgo.cpp" />
+    <ClCompile Include="..\..\Imath\ImathRandom.cpp" />
+    <ClCompile Include="..\..\Imath\ImathShear.cpp" />
+    <ClCompile Include="..\..\Imath\ImathVec.cpp" />
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <ProjectGuid>{BF4DA0BF-AC31-4AB7-A67C-CBB493732EE1}</ProjectGuid>
+    <Keyword>Win32Proj</Keyword>
+    <RootNamespace>IlmBase</RootNamespace>
+    <WindowsTargetPlatformVersion>8.1</WindowsTargetPlatformVersion>
+    <ProjectName>IlmBase</ProjectName>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="Configuration">
+    <ConfigurationType>DynamicLibrary</ConfigurationType>
+    <UseDebugLibraries>true</UseDebugLibraries>
+    <CharacterSet>MultiByte</CharacterSet>
+    <PlatformToolset>v140</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug Static|Win32'" Label="Configuration">
+    <ConfigurationType>StaticLibrary</ConfigurationType>
+    <UseDebugLibraries>true</UseDebugLibraries>
+    <CharacterSet>MultiByte</CharacterSet>
+    <PlatformToolset>v140</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'" Label="Configuration">
+    <ConfigurationType>DynamicLibrary</ConfigurationType>
+    <UseDebugLibraries>true</UseDebugLibraries>
+    <CharacterSet>MultiByte</CharacterSet>
+    <PlatformToolset>v140</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug Static|x64'" Label="Configuration">
+    <ConfigurationType>DynamicLibrary</ConfigurationType>
+    <UseDebugLibraries>true</UseDebugLibraries>
+    <CharacterSet>MultiByte</CharacterSet>
+    <PlatformToolset>v140</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="Configuration">
+    <ConfigurationType>DynamicLibrary</ConfigurationType>
+    <UseDebugLibraries>false</UseDebugLibraries>
+    <WholeProgramOptimization>true</WholeProgramOptimization>
+    <CharacterSet>MultiByte</CharacterSet>
+    <PlatformToolset>v140</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release Static|Win32'" Label="Configuration">
+    <ConfigurationType>StaticLibrary</ConfigurationType>
+    <UseDebugLibraries>false</UseDebugLibraries>
+    <WholeProgramOptimization>true</WholeProgramOptimization>
+    <CharacterSet>MultiByte</CharacterSet>
+    <PlatformToolset>v140</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'" Label="Configuration">
+    <ConfigurationType>DynamicLibrary</ConfigurationType>
+    <UseDebugLibraries>false</UseDebugLibraries>
+    <WholeProgramOptimization>true</WholeProgramOptimization>
+    <CharacterSet>MultiByte</CharacterSet>
+    <PlatformToolset>v140</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release Static|x64'" Label="Configuration">
+    <ConfigurationType>StaticLibrary</ConfigurationType>
+    <UseDebugLibraries>false</UseDebugLibraries>
+    <WholeProgramOptimization>true</WholeProgramOptimization>
+    <CharacterSet>MultiByte</CharacterSet>
+    <PlatformToolset>v140</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Label="Configuration" Condition="'$(Configuration)|$(Platform)'=='Release-msvcrt|Win32'">
+    <CharacterSet>MultiByte</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Label="Configuration" Condition="'$(Configuration)|$(Platform)'=='Release-msvcrt|x64'">
+    <CharacterSet>MultiByte</CharacterSet>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings">
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+    <Import Project="props\With OpenEXR.props" />
+    <Import Project="props\With ZLib.props" />
+    <Import Project="props\IlmBase.props" />
+    <Import Project="Profile Dynamic.props" />
+  </ImportGroup>
+  <ImportGroup Condition="'$(Configuration)|$(Platform)'=='Debug Static|Win32'" Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+    <Import Project="props\With OpenEXR.props" />
+    <Import Project="props\With ZLib.props" />
+    <Import Project="props\IlmBase.props" />
+    <Import Project="props\Profile Static.props" />
+  </ImportGroup>
+  <ImportGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'" Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+    <Import Project="props\With OpenEXR.props" />
+    <Import Project="props\With ZLib.props" />
+    <Import Project="props\IlmBase.props" />
+    <Import Project="Profile Dynamic.props" />
+  </ImportGroup>
+  <ImportGroup Condition="'$(Configuration)|$(Platform)'=='Debug Static|x64'" Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+    <Import Project="props\With OpenEXR.props" />
+    <Import Project="props\With ZLib.props" />
+    <Import Project="props\IlmBase.props" />
+    <Import Project="props\Profile Static.props" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+    <Import Project="props\With OpenEXR.props" />
+    <Import Project="props\With ZLib.props" />
+    <Import Project="props\IlmBase.props" />
+    <Import Project="Profile Dynamic.props" />
+  </ImportGroup>
+  <ImportGroup Condition="'$(Configuration)|$(Platform)'=='Release Static|Win32'" Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+    <Import Project="props\With OpenEXR.props" />
+    <Import Project="props\With ZLib.props" />
+    <Import Project="props\IlmBase.props" />
+    <Import Project="props\Profile Static.props" />
+  </ImportGroup>
+  <ImportGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'" Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+    <Import Project="props\With OpenEXR.props" />
+    <Import Project="props\With ZLib.props" />
+    <Import Project="props\IlmBase.props" />
+    <Import Project="Profile Dynamic.props" />
+  </ImportGroup>
+  <ImportGroup Condition="'$(Configuration)|$(Platform)'=='Release Static|x64'" Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+    <Import Project="props\With OpenEXR.props" />
+    <Import Project="props\With ZLib.props" />
+    <Import Project="props\IlmBase.props" />
+    <Import Project="props\Profile Static.props" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <LinkIncremental>true</LinkIncremental>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug Static|Win32'">
+    <LinkIncremental>true</LinkIncremental>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <LinkIncremental>true</LinkIncremental>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug Static|x64'">
+    <LinkIncremental>true</LinkIncremental>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <LinkIncremental>false</LinkIncremental>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release Static|Win32'">
+    <LinkIncremental>false</LinkIncremental>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <LinkIncremental>false</LinkIncremental>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release Static|x64'">
+    <LinkIncremental>false</LinkIncremental>
+  </PropertyGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <ClCompile>
+      <PrecompiledHeader>NotUsing</PrecompiledHeader>
+      <Optimization>Disabled</Optimization>
+    </ClCompile>
+    <Link>
+      <SubSystem>Windows</SubSystem>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <ImportLibrary>$(OutDir)$(TargetName).lib</ImportLibrary>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug Static|Win32'">
+    <ClCompile>
+      <PrecompiledHeader>NotUsing</PrecompiledHeader>
+      <WarningLevel>Level3</WarningLevel>
+      <Optimization>Disabled</Optimization>
+    </ClCompile>
+    <Link>
+      <SubSystem>Windows</SubSystem>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <ImportLibrary>$(OutDir)$(TargetName).lib</ImportLibrary>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <ClCompile>
+      <PrecompiledHeader>NotUsing</PrecompiledHeader>
+    </ClCompile>
+    <Link>
+      <SubSystem>Windows</SubSystem>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <ImportLibrary>$(OutDir)$(TargetName).lib</ImportLibrary>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug Static|x64'">
+    <ClCompile>
+      <PrecompiledHeader>NotUsing</PrecompiledHeader>
+      <WarningLevel>Level3</WarningLevel>
+      <Optimization>Disabled</Optimization>
+    </ClCompile>
+    <Link>
+      <SubSystem>Windows</SubSystem>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <ImportLibrary>$(OutDir)$(TargetName).lib</ImportLibrary>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+    </ClCompile>
+    <Link>
+      <SubSystem>Windows</SubSystem>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <EnableCOMDATFolding>true</EnableCOMDATFolding>
+      <OptimizeReferences>true</OptimizeReferences>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release Static|Win32'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <PrecompiledHeader>NotUsing</PrecompiledHeader>
+      <Optimization>MaxSpeed</Optimization>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <IntrinsicFunctions>true</IntrinsicFunctions>
+      <PreprocessorDefinitions>WIN32;NDEBUG;_WINDOWS;_USRDLL;ILMBASE_EXPORTS;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+    </ClCompile>
+    <Link>
+      <SubSystem>Windows</SubSystem>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <EnableCOMDATFolding>true</EnableCOMDATFolding>
+      <OptimizeReferences>true</OptimizeReferences>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <ClCompile />
+    <Link>
+      <SubSystem>Windows</SubSystem>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <EnableCOMDATFolding>true</EnableCOMDATFolding>
+      <OptimizeReferences>true</OptimizeReferences>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release Static|x64'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <PrecompiledHeader>NotUsing</PrecompiledHeader>
+      <Optimization>MaxSpeed</Optimization>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <IntrinsicFunctions>true</IntrinsicFunctions>
+      <PreprocessorDefinitions>WIN32;NDEBUG;_WINDOWS;_USRDLL;ILMBASE_EXPORTS;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+    </ClCompile>
+    <Link>
+      <SubSystem>Windows</SubSystem>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <EnableCOMDATFolding>true</EnableCOMDATFolding>
+      <OptimizeReferences>true</OptimizeReferences>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release-libcmt3|Win32'">
+    <ClCompile>
+      <RuntimeLibrary>MultiThreaded</RuntimeLibrary>
+    </ClCompile>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release-libcmt3|x64'">
+    <ClCompile>
+      <RuntimeLibrary>MultiThreaded</RuntimeLibrary>
+    </ClCompile>
+  </ItemDefinitionGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+  </ImportGroup>
+</Project>

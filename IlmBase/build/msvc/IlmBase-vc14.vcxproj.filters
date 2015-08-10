@@ -1,0 +1,267 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="Iex">
+      <UniqueIdentifier>{51a2a4dc-09eb-46de-b8a5-20d8ea0a35ac}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="IexMath">
+      <UniqueIdentifier>{fe6c3bfc-8a89-4cc1-95aa-6e956a90959b}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="IlmThread">
+      <UniqueIdentifier>{aa94bd89-bcbd-41d7-a79d-0dbd53c70136}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Half">
+      <UniqueIdentifier>{49a823a5-39f2-41a6-a8ba-1d9f7b3f0ec0}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="IMath">
+      <UniqueIdentifier>{76fa76bd-0328-41a4-bbf0-b0c6567f7133}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="OpenEXR">
+      <UniqueIdentifier>{306a3f0e-def4-45d1-b101-276cca561cb6}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="..\..\config.windows\IlmBaseConfig.h" />
+    <ClInclude Include="..\..\Iex\IexBaseExc.h">
+      <Filter>Iex</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Iex\IexErrnoExc.h">
+      <Filter>Iex</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Iex\IexExport.h">
+      <Filter>Iex</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Iex\IexForward.h">
+      <Filter>Iex</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Iex\IexMacros.h">
+      <Filter>Iex</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Iex\IexNamespace.h">
+      <Filter>Iex</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Iex\IexThrowErrnoExc.h">
+      <Filter>Iex</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Iex\IexMathExc.h">
+      <Filter>IexMath</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\IexMath\IexMathFloatExc.h">
+      <Filter>IexMath</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\IexMath\IexMathFpu.h">
+      <Filter>IexMath</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\IexMath\IexMathIeeeExc.h">
+      <Filter>IexMath</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Half\half.h">
+      <Filter>Half</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Half\halfExport.h">
+      <Filter>Half</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Half\halfFunction.h">
+      <Filter>Half</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Half\halfLimits.h">
+      <Filter>Half</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Iex\Iex.h">
+      <Filter>Iex</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\IlmThread\IlmThread.h">
+      <Filter>IlmThread</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\IlmThread\IlmThreadExport.h">
+      <Filter>IlmThread</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\IlmThread\IlmThreadForward.h">
+      <Filter>IlmThread</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\IlmThread\IlmThreadMutex.h">
+      <Filter>IlmThread</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\IlmThread\IlmThreadNamespace.h">
+      <Filter>IlmThread</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\IlmThread\IlmThreadPool.h">
+      <Filter>IlmThread</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\IlmThread\IlmThreadSemaphore.h">
+      <Filter>IlmThread</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Imath\ImathBox.h">
+      <Filter>IMath</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Imath\ImathBoxAlgo.h">
+      <Filter>IMath</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Imath\ImathColor.h">
+      <Filter>IMath</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Imath\ImathColorAlgo.h">
+      <Filter>IMath</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Imath\ImathEuler.h">
+      <Filter>IMath</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Imath\ImathExc.h">
+      <Filter>IMath</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Imath\ImathExport.h">
+      <Filter>IMath</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Imath\ImathForward.h">
+      <Filter>IMath</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Imath\ImathFrame.h">
+      <Filter>IMath</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Imath\ImathFrustum.h">
+      <Filter>IMath</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Imath\ImathFrustumTest.h">
+      <Filter>IMath</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Imath\ImathFun.h">
+      <Filter>IMath</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Imath\ImathGL.h">
+      <Filter>IMath</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Imath\ImathGLU.h">
+      <Filter>IMath</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Imath\ImathHalfLimits.h">
+      <Filter>IMath</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Imath\ImathInt64.h">
+      <Filter>IMath</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Imath\ImathInterval.h">
+      <Filter>IMath</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Imath\ImathLimits.h">
+      <Filter>IMath</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Imath\ImathLine.h">
+      <Filter>IMath</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Imath\ImathLineAlgo.h">
+      <Filter>IMath</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Imath\ImathMath.h">
+      <Filter>IMath</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Imath\ImathMatrix.h">
+      <Filter>IMath</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Imath\ImathMatrixAlgo.h">
+      <Filter>IMath</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Imath\ImathNamespace.h">
+      <Filter>IMath</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Imath\ImathPlane.h">
+      <Filter>IMath</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Imath\ImathPlatform.h">
+      <Filter>IMath</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Imath\ImathQuat.h">
+      <Filter>IMath</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Imath\ImathRandom.h">
+      <Filter>IMath</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Imath\ImathRoots.h">
+      <Filter>IMath</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Imath\ImathShear.h">
+      <Filter>IMath</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Imath\ImathSphere.h">
+      <Filter>IMath</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Imath\ImathVec.h">
+      <Filter>IMath</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Imath\ImathVecAlgo.h">
+      <Filter>IMath</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="..\..\Half\eLut.cpp" />
+    <ClCompile Include="..\..\Half\toFloat.cpp" />
+    <ClCompile Include="..\..\Iex\IexBaseExc.cpp">
+      <Filter>Iex</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Iex\IexThrowErrnoExc.cpp">
+      <Filter>Iex</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\IexMath\IexMathFloatExc.cpp">
+      <Filter>IexMath</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\IexMath\IexMathFpu.cpp">
+      <Filter>IexMath</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Half\half.cpp">
+      <Filter>Half</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\IlmThread\IlmThread.cpp">
+      <Filter>IlmThread</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\IlmThread\IlmThreadMutex.cpp">
+      <Filter>IlmThread</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\IlmThread\IlmThreadMutexPosix.cpp">
+      <Filter>IlmThread</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\IlmThread\IlmThreadMutexWin32.cpp">
+      <Filter>IlmThread</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\IlmThread\IlmThreadPool.cpp">
+      <Filter>IlmThread</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\IlmThread\IlmThreadPosix.cpp">
+      <Filter>IlmThread</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\IlmThread\IlmThreadSemaphore.cpp">
+      <Filter>IlmThread</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\IlmThread\IlmThreadSemaphorePosix.cpp">
+      <Filter>IlmThread</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\IlmThread\IlmThreadSemaphorePosixCompat.cpp">
+      <Filter>IlmThread</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\IlmThread\IlmThreadSemaphoreWin32.cpp">
+      <Filter>IlmThread</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\IlmThread\IlmThreadWin32.cpp">
+      <Filter>IlmThread</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Imath\ImathBox.cpp">
+      <Filter>IMath</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Imath\ImathColorAlgo.cpp">
+      <Filter>IMath</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Imath\ImathFun.cpp">
+      <Filter>IMath</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Imath\ImathMatrixAlgo.cpp">
+      <Filter>IMath</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Imath\ImathRandom.cpp">
+      <Filter>IMath</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Imath\ImathShear.cpp">
+      <Filter>IMath</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Imath\ImathVec.cpp">
+      <Filter>IMath</Filter>
+    </ClCompile>
+  </ItemGroup>
+</Project>
