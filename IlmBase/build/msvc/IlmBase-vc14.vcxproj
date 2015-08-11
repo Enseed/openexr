@@ -201,7 +201,7 @@
     <Import Project="props\With OpenEXR.props" />
     <Import Project="props\With ZLib.props" />
     <Import Project="props\IlmBase.props" />
-    <Import Project="Profile Dynamic.props" />
+    <Import Project="props\Profile Dynamic.props" />
   </ImportGroup>
   <ImportGroup Condition="'$(Configuration)|$(Platform)'=='Debug Static|Win32'" Label="PropertySheets">
     <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
@@ -215,7 +215,7 @@
     <Import Project="props\With OpenEXR.props" />
     <Import Project="props\With ZLib.props" />
     <Import Project="props\IlmBase.props" />
-    <Import Project="Profile Dynamic.props" />
+    <Import Project="props\Profile Dynamic.props" />
   </ImportGroup>
   <ImportGroup Condition="'$(Configuration)|$(Platform)'=='Debug Static|x64'" Label="PropertySheets">
     <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
@@ -229,7 +229,7 @@
     <Import Project="props\With OpenEXR.props" />
     <Import Project="props\With ZLib.props" />
     <Import Project="props\IlmBase.props" />
-    <Import Project="Profile Dynamic.props" />
+    <Import Project="props\Profile Dynamic.props" />
   </ImportGroup>
   <ImportGroup Condition="'$(Configuration)|$(Platform)'=='Release Static|Win32'" Label="PropertySheets">
     <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
@@ -243,7 +243,7 @@
     <Import Project="props\With OpenEXR.props" />
     <Import Project="props\With ZLib.props" />
     <Import Project="props\IlmBase.props" />
-    <Import Project="Profile Dynamic.props" />
+    <Import Project="props\Profile Dynamic.props" />
   </ImportGroup>
   <ImportGroup Condition="'$(Configuration)|$(Platform)'=='Release Static|x64'" Label="PropertySheets">
     <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
